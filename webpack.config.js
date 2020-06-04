@@ -8,6 +8,7 @@ module.exports = {
 	mode: isProduction ? 'production' : 'development',
 	entry: {
 		main: path.resolve(__dirname, './assets/index.css'),
+		fonts: './assets/fonts.js',
 	},
 	output: {
 		path: path.resolve(__dirname, './dist'),
@@ -27,6 +28,18 @@ module.exports = {
 					},
 					'css-loader',
 					'postcss-loader',
+				]
+			},
+			{
+				test: /\.(woff(2)?|tff|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts/'
+						}
+					}
 				]
 			}
 		]

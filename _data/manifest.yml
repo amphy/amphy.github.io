@@ -1,4 +1,7 @@
 {
-  "main.css": "./dist/main.dd89b3f58c2cd3b1a350.css",
-  "main.js": "./dist/main.dd89b3f58c2cd3b1a350.js"
+  "fonts.css": "./dist/fonts.34d43c4cf8e8aeb4c8d6.css",
+  "fonts.js": "./dist/fonts.34d43c4cf8e8aeb4c8d6.js",
+  "main.css": "./dist/main.34d43c4cf8e8aeb4c8d6.css",
+  "main.js": "./dist/main.34d43c4cf8e8aeb4c8d6.js",
+  "fonts/index.css": "./dist/fonts/work-sans-latin-900.woff2"
 }

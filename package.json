@@ -4,5 +4,27 @@
 		"prod": "NODE_ENV=production npx webpack",
 		"dev": "NODE_ENV=development npx webpack",
 		"watch": "NODE_ENV=development npx webpack --watch"
+	},
+	"dependencies": {
+		"typeface-aleo": "0.0.69",
+		"typeface-homemade-apple": "0.0.72",
+		"typeface-work-sans": "0.0.72"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^2.2.0",
+		"autoprefixer": "^9.8.0",
+		"clean-webpack-plugin": "^3.0.0",
+		"css-loader": "^3.5.3",
+		"cssnano": "^4.1.10",
+		"file-loader": "^6.0.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"postcss": "^7.0.31",
+		"postcss-loader": "^3.0.0",
+		"postcss-nested": "^4.2.1",
+		"style-loader": "^1.2.1",
+		"tailwindcss": "^1.4.6",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-manifest-plugin": "^2.2.0"
 	}
 }

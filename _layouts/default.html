@@ -1,10 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="{{ site.data.manifest['fonts.js'] }}"></script>
 	<link rel="stylesheet" href="{{ site.data.manifest['main.css'] }}">
-	<title>Document</title>
+	<title>{{ page.title }}</title>
 </head>
-<body class="border-blue-200 p-8 min-h-screen min-w-full border-8">
-	{{ content }}
+<body class="bg-bright-white font-work">
+	<div class="md:flex md:flex-row md:items-center md:justify-center md:h-screen">
+	<div class="md:w-1/2 text-center text-japan-blue text-5xl font-apple mt-12 md:mt-0 lg:text-6xl">
+		Heather Huynh
+	</div>
+	<div class="md:w-1/2">
+		<div class="text-center text-japan-lightblue fill-current">
+			<svg class="block m-auto" width="150", height="150" viewBox="0, 0, 150, 150">
+				<g id="svgg" transform="scale(0.40 0.40)"><path id="path0" d="M56.837 76.980 C 57.610 79.169,76.638 116.281,99.121 159.450 C 121.605 202.620,140.000 238.246,140.000 238.618 C 140.000 238.991,133.382 241.371,125.293 243.908 C 112.010 248.074,106.251 251.901,65.793 283.442 C 41.157 302.649,19.254 319.611,17.121 321.136 C 9.388 326.662,16.174 325.173,87.000 305.811 C 171.981 282.580,164.142 283.493,170.061 296.131 C 176.188 309.212,174.466 308.842,196.783 301.866 C 207.409 298.545,217.204 296.466,218.551 297.247 C 219.898 298.027,228.775 304.816,238.278 312.333 C 258.098 328.011,257.159 327.624,258.867 320.818 C 259.608 317.866,261.207 316.062,262.584 316.626 C 263.913 317.171,266.459 318.204,268.242 318.923 C 270.885 319.988,274.574 313.001,288.206 281.115 C 299.185 255.434,305.970 241.949,307.964 241.852 C 317.250 241.398,367.418 196.751,363.285 192.618 C 362.907 192.240,353.869 193.610,343.201 195.663 C 325.754 199.021,323.923 199.074,324.985 196.198 C 331.368 178.924,343.351 152.082,344.695 152.045 C 345.628 152.020,353.503 157.012,362.195 163.138 C 370.888 169.264,377.968 173.539,377.929 172.638 C 377.680 166.890,354.373 138.000,349.984 138.000 C 348.100 138.000,342.608 137.466,337.779 136.814 L 329.000 135.628 304.179 170.856 C 288.498 193.114,277.820 206.431,275.179 207.026 C 272.881 207.544,267.049 208.808,262.220 209.834 L 253.440 211.701 235.339 192.849 C 222.768 179.756,216.753 174.761,215.650 176.499 C 214.455 178.380,214.034 178.257,213.950 176.000 C 213.889 174.350,203.707 183.698,191.324 196.774 L 168.809 220.548 115.114 149.774 C 59.122 75.972,54.397 70.070,56.837 76.980 M261.379 285.500 C 260.876 287.425,260.464 285.850,260.464 282.000 C 260.464 278.150,260.876 276.575,261.379 278.500 C 261.882 280.425,261.882 283.575,261.379 285.500 " stroke="none" fill-rule="evenodd"></path></g>
+			</svg>
+		</div>
+		<div class="text-center text-japan-dark mt-4 mx-8">
+			{{ content }}
+		</div>
+		<div class="text-center text-xl mt-8 space-x-6 text-japan-blue">
+			<a class="hover:text-japan-dark hover:underline" href="#">about</a> <a class="hover:text-japan-dark hover:underline" href="#">blog</a> <a class="hover:text-japan-dark hover:underline" href="#">projects</a> <a class="hover:text-japan-dark hover:underline" href="#">press</a>
+		</div>
+	</div>
+</div>
 </body>
 </html>
