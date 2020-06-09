@@ -1,4 +1,36 @@
 @tailwind base;
+h1 {
+	@apply text-2xl text-japan-blue mt-4;
+}
+
+h2 {
+	@apply text-xl text-japan-blue mt-4;
+}
+
+h3 {
+	@apply text-lg text-japan-blue mt-4;
+}
+
+h4 {
+	@apply text-lg text-japan-blue mt-4;
+}
+
+h5 {
+	@apply text-lg text-japan-blue mt-4;
+}
+
+p {
+	@apply mt-4 text-japan-dark;
+}
+
+pre {
+	@apply overflow-scroll mt-4 p-4;
+}
+
+a {
+	@apply text-japan-blue;
+}
+
 @tailwind components;
 
 @font-face {

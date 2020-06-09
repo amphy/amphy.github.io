@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../{{ site.data.manifest['fonts.js'] }}"></script>
+	<link rel="stylesheet" href="../{{ site.data.manifest['main.css'] }}">
+	<link rel="stylesheet" href="../{{ site.data.manifest['syntax.css'] }}">
+	<title>{{ page.title }}</title>
+</head>
+<body class="bg-bright-white font-work">
+	{% include header.html %}
+	<div class="hidden md:block mx-16">
+	<p class="text-2xl text-japan-pink text-center md:text-left mx-12">Featured Projects</p>
+	<div class="flex flex-wrap flex-row justify-around container mx-auto text-japan-dark mt-4 px-16 mb-12">
+
+		{% for post in site.categories[page.category] %}
+			<div class="box-border w-full md:w-1/3 bg-japan-lightblue rounded-md py-2 px-4 m-2">
+				<img class="rounded-lg w-full max-w-s h-64 my-4 object-center" src="{{ post.featured_img }}"/>
+				<a class="text-xl" href="{{ post.url }}">{{ post.title }}</a>
+				{% if post.tagline %}
+				<p class="mb-4">{{ post.tagline }}</p>
+				{% else %}
+				<p>{{ post.excerpt }}</p>
+				{% endif %}
+				<div class="flex flex-row flex-wrap content-center mt-2"><b>Tags</b>: {% for tag in post.tags %} <span class="border border-japan-pink rounded border-opacity-25 px-1 text-japan-pink bg-japan-pink bg-opacity-25 ml-2 mb-2">{{ tag }}</span> {% endfor %}</div>	
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<div class="mx-16 mb-12">
+	<p class="text-2xl text-japan-pink text-center md:text-left mx-12">All Projects</p>
+	{% assign sorted_tags = site.tags %}
+	{% for tag in sorted_tags %}
+	{% assign zz = tag[1] | where: "categories", page.category %}
+		{% if zz != empty %}
+		<div class="md:px-16">
+			<p class="text-xl text-japan-pink capitalize mb-4">{{ tag[0] }} Projects</p>
+			<ul class="list-disc px-4 text-lg">
+			{% for p in zz %}
+				<li><a href="{{ p.url }}">{{ p.title }}</a> – {{ p.tagline }}</li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+	{% endfor %}
+</div>
+</div>
+</body>
+</html>

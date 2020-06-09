@@ -1,7 +1,9 @@
 {
-  "fonts.css": "./dist/fonts.34d43c4cf8e8aeb4c8d6.css",
-  "fonts.js": "./dist/fonts.34d43c4cf8e8aeb4c8d6.js",
-  "main.css": "./dist/main.34d43c4cf8e8aeb4c8d6.css",
-  "main.js": "./dist/main.34d43c4cf8e8aeb4c8d6.js",
-  "fonts/index.css": "./dist/fonts/work-sans-latin-900.woff2"
+  "fonts.css": "/dist/fonts.f125ad5158898ac2a115.css",
+  "fonts.js": "/dist/fonts.f125ad5158898ac2a115.js",
+  "main.css": "/dist/main.f125ad5158898ac2a115.css",
+  "main.js": "/dist/main.f125ad5158898ac2a115.js",
+  "syntax.css": "/dist/syntax.f125ad5158898ac2a115.css",
+  "syntax.js": "/dist/syntax.f125ad5158898ac2a115.js",
+  "fonts/index.css": "/dist/fonts/work-sans-latin-900.woff2"
 }

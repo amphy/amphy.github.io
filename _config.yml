@@ -3,7 +3,8 @@ defaults:
       path: ""
     values:
       layout: "default"
-
+baseurl: /
+highlighter: rouge
 exclude:
   - "*.config.js"
   - "package*.json"

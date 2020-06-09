@@ -8,6 +8,7 @@ module.exports = {
 	mode: isProduction ? 'production' : 'development',
 	entry: {
 		main: path.resolve(__dirname, './assets/index.css'),
+		syntax: path.resolve(__dirname, './assets/syntax.css'),
 		fonts: './assets/fonts.js',
 	},
 	output: {
@@ -51,7 +52,7 @@ module.exports = {
 		}),
 		new ManifestPlugin({
 			fileName: '../_data/manifest.yml',
-			publicPath: './dist/',
+			publicPath: '/dist/',
 		}),
 	],
 };

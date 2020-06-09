@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="{{ site.data.manifest['fonts.js'] }}"></script>
+	<link rel="stylesheet" href="{{ site.data.manifest['main.css'] }}">
+	<link rel="stylesheet" href="{{ site.data.manifest['syntax.css'] }}">
+	<title>{{ page.title }}</title>
+</head>
+<body class="bg-bright-white font-work">
+	{% include header.html %}
+
+	<div class="container mx-auto text-japan-dark mt-4 px-24 mb-12">
+		<div class="text-japan-pink text-4xl">{{ page.title }}</div>
+		{{ page.date | date:"%B %d, %Y" }}
+		{{ content }}
+	</div>
+</div>
+</body>
+</html>
