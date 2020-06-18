@@ -1,4 +1,5 @@
 //require('typeface-work-sans')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: [],
@@ -23,9 +24,21 @@ module.exports = {
     		work: ['"Work Sans"', "sans-serif"],
     		aleo: ["Aleo", "serif"],
     		apple: ["Homemade Apple", "serif"]
+    	},
+    	spacing: {
+    		'72': '18rem',
+    		'84': '21rem',
     	}
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+  	plugin(function({ addVariant, e }) {
+  		addVariant('after', ({ modifySelectors, separator }) => {
+  			modifySelectors(({ className }) => {
+  				return `.${e(`after${separator}${className}`)}:after`
+  			})
+  		})
+  	})
+  ],
 }

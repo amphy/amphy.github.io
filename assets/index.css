@@ -49,3 +49,16 @@ a {
 }
 
 @tailwind utilities;
+
+@responsive {
+	@variants after {
+		.carousel {
+			content: 'flickity';
+			display: none;
+		}
+
+		.carousel-none {
+			content: '';
+		}
+	}
+}
